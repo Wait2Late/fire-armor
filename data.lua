@@ -2,6 +2,7 @@
 
 local fireArmor = table.deepcopy(data.raw["armor"]["heavy-armor"]) -- copy the table that defines the heavy armor item into the fireArmor variable
 
+
 fireArmor.name = "fire-armor"
 fireArmor.icons =
 {
@@ -42,7 +43,7 @@ local recipe =
   type = "recipe",
   name = "fire-armor",
   enabled = true,
-  energy_required = 8, -- time to craft in seconds (at crafting speed 1)
+  energy_required = 2, -- time to craft in seconds (at crafting speed 1)
   ingredients = {{"copper-plate", 10}, {"steel-plate", 5}},
   result = "fire-armor"
 }
